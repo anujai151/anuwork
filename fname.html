@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<title> fruit site</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<head>
+</head>
+<style>
+    *{
+        margin: auto;
+    }
+    body{
+        background:url('https://freedesignfile.com/upload/2017/03/Fruits-and-Splashing-water-Stock-Photo-02.jpg');
+        background-repeat: no-repeat;
+        background-size: 1600px 750px;
+    }
+    h1{
+        font-size: 35px;
+        background-color: linear-gradient(red,yellow,blue);
+        text-align: center;
+        animation: color 15s infinite;
+        font-style: italic;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: blue;
+        height: 60px;
+        width: 1600px;
+    }
+    @keyframes color {
+        0%{color: red;}
+        50%{color: blue;}
+        50%{color: yellow;}
+        30%{color:brown;}
+        75%{color: blueviolet;}
+        68%{color: green;}
+    }
+    nav{
+        margin-top: 1px;
+        background-color: lightcoral;
+        width: 250px;
+        height: 400px;
+        float: left;
+        
+    }
+    nav ul{
+        display: inline;
+        list-style: none;
+    }
+    nav ul li{
+        float: left;
+        padding: 20px;
+    }
+    nav ul li a{
+        color: white;
+        padding: 6px 8px;
+        font-size: 22px;
+        display: block;
+        float: left;
+    }
+    .as{
+        color: black;
+        padding: 10px;
+    }
+    .bs{
+        color: black;
+        padding: 10px;
+    }
+    .cs{
+        color: black;
+        padding: 10px;
+    }
+    .ds{
+        color: black;
+        padding: 10px;
+    }
+</style>
+<body>
+     <h1><marquee behavior="alternate" direction="right">FRUITSHOP</marquee></h1>
+    <nav>
+        <ul>
+            <div id="br">
+                <button onclick="close()">CLOSE</button>
+            <li><a href="#"><i class="fa fa-home as" aria-hidden="true"></i>HOME</a></li>
+            <li><a href="#"><i class="fa fa-shopping-cart bs" aria-hidden="true"></i>FRUITSVARIES</a></li>
+            <li><a href="#"><i class="fa fa-shopping-bag cs" aria-hidden="true"></i>CUSTOMER</a></li>  
+            <li><a href="#"><i class="fa fa-shopping-basket ds" aria-hidden="true"></i>SHOPS</a></li>  
+            </div>
+            <button onclick="open()">☰</button>
+        </ul>
+    </nav>
+    <script>
+        function close(){
+            document.getElementById("br")
+        }
+        function open(){
+            document.getElementById("br")
+        }
+    </script>
+    
+</body>
+</html>
